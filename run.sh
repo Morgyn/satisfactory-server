@@ -60,6 +60,7 @@ ini_args=(
   "-ini:Game:[/Script/Engine.GameSession]:MaxPlayers=$MAXPLAYERS"
   "-ini:GameUserSettings:[/Script/Engine.GameSession]:MaxPlayers=$MAXPLAYERS"
   "$DISABLESEASONALEVENTS"
+  "${CUSTOMARGS}"
 )
 
 if [[ "${SKIPUPDATE,,}" != "false" ]] && [ ! -f "/config/gamefiles/FactoryServer.sh" ]; then
